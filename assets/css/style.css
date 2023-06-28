@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161926;
+    border: 10px solid #f5bd60;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.section {
+    margin-bottom: 30px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5c80bc;
+}
+
+.section p {
+    margin-bottom: 20px;
+    color: #f5bd60;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Parallax effect*/
