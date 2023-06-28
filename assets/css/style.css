@@ -6,6 +6,34 @@ body {
     border: 10px solid #f5bd60;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    max-height: 40px; 
+    margin-right: 10px; 
+}
+  
+.links {
+    display: flex;
+    align-items: center;
+}
+  
+.links a {
+    margin-right: 20px; /* Adjust the spacing between links */
+    text-decoration: none;
+    color: #5c80bc;
+    font-weight: bold;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
