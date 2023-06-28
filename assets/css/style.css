@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.5rem 2.5rem;
 }
   
 .logo {
@@ -19,7 +19,7 @@ body {
 }
   
 .logo img {
-    max-height: 40px; 
+    max-height: 60px; 
     margin-right: 10px; 
 }
   
@@ -34,6 +34,7 @@ body {
     color: #5c80bc;
     font-weight: bold;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -60,15 +61,10 @@ body {
     color: #f5bd60;
 }
 
-.image-grid {
+.video-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-}
-
-.image-grid img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* Parallax effect*/
