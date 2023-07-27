@@ -1,33 +1,17 @@
-(function($) {
-    $(".contact-form").validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true,
-                minlength: 2
-            }
-        },
-        submitHandler: function(form) {
-            $(form).ajaxSubmit({
-                type:"POST",
-                data: $(form).serialize(),
-                url:"mail.php",
-                success: function() {
-                    $(".contact-form").resetForm();
-                    $(".success").slideDown("slow");
-                },
-                error: function() {
-                    $(".error").slideDown("slow");
-                }
-            });
-        }
-    });    
-})(jQuery);
-
+// makes the parallax elements
+function parallaxIt() {
+    // create variables
+    var $fwindow = $(window);
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  
+    var $contents = [];
+    var $backgrounds = [];
+  
+    // for each of content parallax element
+    $('[data-type="content"]').each(function(index, e) {
+      var $contentObj = $(this);
+  
+      $contentObj.__speed = ($contentObj.data('speed') || 1);
+      $contentObj.__fgOffset = $contentObj.offset().top;
+      $contents.push($contentObj);
+    });

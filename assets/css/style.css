@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,6 +13,37 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 2.5rem;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: #5c80bc;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #5c80bc;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #f5bd60;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.85rem;
+    margin-bottom: 10px;
+    color: #f5bd60;
+}
+
+#footer p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #f5bd60;
 }
   
 .logo {
@@ -31,12 +64,12 @@ body {
 .links a {
     margin-right: 20px; /* Adjust the spacing between links */
     text-decoration: none;
-    color: #5c80bc;
+    color: #f5bd60;
     font-weight: bold;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 80vw;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -45,26 +78,103 @@ body {
 }
 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-align: center;
     flex-grow: 1;
 }
 
-.section h2 {
-    font-size: 20px;
+.section #sub {
+    font-size: 30px;
     margin-bottom: 10px;
     color: #5c80bc;
 }
 
-.section p {
+/*LANDING PAGE*/
+
+#video-landing img {
+    width: 100%;
+}
+
+/* Parallax effect*/ 
+.parallax-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-image {
+    max-width: 100%;
+}
+
+/* CLIENT PAGE */
+.client-row {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+}
+  
+.client-row img {
+    width: 25%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+  
+.client-row .client-text {
+    flex: 1;
+    text-align: left;
     color: #f5bd60;
 }
 
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+/* VIDEO PAGE */
+.video-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.video-column {
+    flex: 1;
+    padding: 10px;
 }
 
-/* Parallax effect*/
+.video-column .video-text{
+    color: #f5bd60;
+    font-size: 
+}
+
+/* PHOTOGRAPHY PAGE */
+.photo-row{
+    display: flex;
+}
+
+/* CONTACT */
+form div {
+    padding: 5px;  
+}
+
+form div input {
+    width: 50%;
+    padding: 8px 10px;
+}
+
+form div textarea {
+    width: 50%;
+    padding: 8px 10px;
+}
+
+form div #contact-submit {
+    width: 150px;
+    border-color: #f5bd60;
+    background: #f5bd60;
+    color: #5c80bc;
+}
+
+form div #contact-submit:hover {
+    width: 150px;
+    border-color: #f5bd60;
+    background: transparent;
+    color: #f5bd60;
+}
