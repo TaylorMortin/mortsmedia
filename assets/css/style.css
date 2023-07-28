@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -60,6 +58,8 @@ p {
     display: flex;
     align-items: center;
 }
+
+
   
 .links a {
     margin-right: 20px; /* Adjust the spacing between links */
@@ -77,13 +77,12 @@ p {
     min-height: 100vh;
 }
 
-.section {
+section {
     margin-bottom: 25px;
     text-align: center;
-    flex-grow: 1;
 }
 
-.section #sub {
+section #sub {
     font-size: 30px;
     margin-bottom: 10px;
     color: #5c80bc;
@@ -140,16 +139,104 @@ p {
     padding: 10px;
 }
 
-.video-column .video-text{
+.video-column .video-text {
     color: #f5bd60;
-    font-size: 
+    /*font-size;*/
 }
 
 /* PHOTOGRAPHY PAGE */
-.photo-row{
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+.gallery{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+   
+.item img{
+    width: 100%;
+    height: auto;
 }
 
+/*
+#gallery {
+    img {
+      height: 75vw;
+      object-fit: cover;
+      
+      @media (min-width: $bootstrap-sm) {
+        height: 35vw;
+      }
+      
+      @media (min-width: $bootstrap-lg) {
+        height: 18vw;
+      }
+    }
+  }
+
+.carousel-item {
+    img {
+      height: 60vw;
+      object-fit: cover;
+      
+      @media (min-width: $bootstrap-sm) {
+        height: 350px;
+      }
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.close {
+    color: #f5bd60;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+}
+*/
 /* CONTACT */
 form div {
     padding: 5px;  
