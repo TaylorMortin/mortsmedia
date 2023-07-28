@@ -89,8 +89,7 @@ section #sub {
 }
 
 /*LANDING PAGE*/
-
-#video-landing img {
+.video-three-column {
     width: 100%;
 }
 
