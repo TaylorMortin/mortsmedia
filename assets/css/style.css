@@ -90,8 +90,7 @@ p {
 }
 
 /*LANDING PAGE*/
-
-#video-landing img {
+.video-three-column {
     width: 100%;
 }
 
@@ -138,11 +137,6 @@ p {
 .video-column {
     flex: 1;
     padding: 10px;
-}
-
-.video-column .video-text{
-    color: #f5bd60;
-    font-size: 
 }
 
 /* PHOTOGRAPHY PAGE */
