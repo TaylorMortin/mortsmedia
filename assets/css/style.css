@@ -285,6 +285,56 @@ section #sub {
     height: auto;
 }
 
+/* ABOUT PAGE */
+
+.contactPhoto > img {
+    width: 300px;
+    box-shadow: -1rem 1rem #f5bd60;
+    margin-bottom: 2rem;
+}
+
+/* GEAR PAGE */
+
+.galleryContainer {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 60rem;
+    justify-content: center;
+}
+
+.galleryCellWrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: #f6bd60;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.galleryCellTitle {
+    font-size: 24px;
+    color: #5c80bc;
+}
+
+.galleryCellImg {
+    max-width: 50%;
+    max-height: 200px;
+}
+
+.galleryImgDesc {
+    font-size: 18px;
+    color: #5c80bc;
+    text-align: left;
+}
+
+.galleryImgDesc a,
+.galleryImgDesc a:visited {
+    color: #5c80bc;
+}
+
 /*
 #gallery {
     img {
