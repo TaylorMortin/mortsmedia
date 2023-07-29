@@ -173,26 +173,38 @@ section #sub {
 
 /* GEAR PAGE */
 
+/* .gallerySection {
+    display: flex;
+    justify-content: start;
+} */
+
 .galleryContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    max-width: 60rem;
+    justify-content: center;
 }
 
 .galleryCellWrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     background-color: #f6bd60;
+    width: 300px;
+    height: 300px;
+    align-items: center;
     padding: 1rem;
-    /* aspect-ratio: 1; */
 }
 
 .galleryCellTitle {
     font-size: 24px;
-    margin-bottom: 10px;
     color: #5c80bc;
 }
 
 .galleryCellImg {
     max-width: 50%;
+    max-height: 200px;
 }
 
 .galleryImgDesc {
