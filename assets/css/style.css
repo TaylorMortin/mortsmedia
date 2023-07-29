@@ -171,12 +171,15 @@ section #sub {
     height: auto;
 }
 
-/* GEAR PAGE */
+/* ABOUT PAGE */
 
-/* .gallerySection {
-    display: flex;
-    justify-content: start;
-} */
+.contactPhoto > img {
+    width: 300px;
+    box-shadow: -1rem 1rem #f5bd60;
+    margin-bottom: 2rem;
+}
+
+/* GEAR PAGE */
 
 .galleryContainer {
     margin: auto;
