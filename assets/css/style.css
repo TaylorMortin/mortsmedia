@@ -251,7 +251,7 @@ section #sub {
 
 #parallax {
     width: 100%;
-    height: 25vh;
+    height: 45vh;
     overflow:hidden;
     margin-bottom: 25px;
     
@@ -325,6 +325,15 @@ section #sub {
     /*font-size;*/
 }
 
+@media only screen and (max-width: 570px) {
+    .video-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+}
+
 /* PHOTOGRAPHY PAGE */ 
 .carousel-item img{
     width: auto !important;
@@ -375,6 +384,11 @@ section #sub {
 .galleryCellImg {
     max-width: 50%;
     max-height: 200px;
+}
+
+.galleryImgDJI {
+    max-width: 50%;
+    max-height: 150px; 
 }
 
 .galleryImgDesc {
