@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #161926 !important;
@@ -8,24 +12,30 @@ body {
 }
 
 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     font-size: 45px;
     margin-bottom: 10px;
     color: #5c80bc;
 }
 
 h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
     font-size: 30px;
     margin-bottom: 5px;
     color: #5c80bc;
 }
 
 h3 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
     color: #f5bd60;
 }
 
 p {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     line-height: 1.85rem;
     margin-bottom: 10px;
@@ -33,6 +43,7 @@ p {
 }
 
 #footer {
+    font-family: 'Ubuntu', sans-serif;
     margin-top: 25px;
 }
 
@@ -71,6 +82,7 @@ p {
 }
   
 .links a {
+    font-family: 'Ubuntu', sans-serif;
     margin-right: 20px; 
     text-decoration: none;
     color: #f5bd60;
@@ -94,6 +106,7 @@ p {
 
     .mobile {
         display: block;
+        z-index: 100;
     }
 
     #toggle {
@@ -146,6 +159,7 @@ p {
     }
       
     nav a {
+        font-family: 'Ubuntu', sans-serif;
         position: relative;
         text-align: center;
         text-decoration: none;
@@ -235,6 +249,21 @@ section #sub {
     margin-bottom: 0px;
 }
 
+video-three-column-mobile {
+    display: none;
+}
+/*
+@media only screen and (max-width: 720px) {
+    .video-three-column {
+        display: none;
+    }
+
+    video-three-column-mobile {
+        width: 100%;
+    }
+
+}
+*/
 /* Parallax effect */
 .parallax{
     padding-top: 200px;
@@ -283,7 +312,14 @@ section #sub {
 }
 
 .client-row .client-text a{
+    font-family: 'Ubuntu', sans-serif;
     color: #f5bd60;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.client-row .client-text a:hover{
+    color: #5c80bc;
 }
 
 @media only screen and (max-width: 720px) {
@@ -322,6 +358,7 @@ section #sub {
 
 .video-column .video-text {
     color: #f5bd60;
+    font-family: 'Ubuntu', sans-serif;
     /*font-size;*/
 }
 
@@ -377,6 +414,7 @@ section #sub {
 }
 
 .galleryCellTitle {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
     color: #5c80bc;
 }
@@ -392,6 +430,7 @@ section #sub {
 }
 
 .galleryImgDesc {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     color: #5c80bc;
     text-align: left;
@@ -404,6 +443,7 @@ section #sub {
 
 /* CONTACT */
 .button {
+    font-family: 'Ubuntu', sans-serif;
     border: 3px solid #f5bd60;
     background-color: #f5bd60;
     color: #161926;
