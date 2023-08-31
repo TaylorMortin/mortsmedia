@@ -240,6 +240,40 @@ section #sub {
     color: #5c80bc;
 }
 
+/* SOCIALS */
+
+ion-icon {
+    color: #f6bd60;
+}
+
+.sidebar-socials {
+    display: flex;
+    flex-flow: column;
+    position: fixed;
+    top: 10rem;
+    right: 2.5rem;
+    gap: 1rem;
+}
+.sidebar-socials ion-icon {
+    font-size: 3rem;
+}
+
+.nav-socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-socials ion-icon{
+    font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .sidebar-socials {
+        display: none !important;
+    }
+
+}
+
 /*LANDING PAGE*/
 .video-three-column {
     width: 100%;
@@ -299,6 +333,7 @@ video-three-column-mobile {
     align-items: center;
 }
   
+
 .client-row img {
     width: 22%;
     object-fit: cover;
@@ -377,6 +412,15 @@ video-three-column-mobile {
     height: 500px;
     margin: 0 auto;
 }
+
+/* WORK PAGE */
+.work-row {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap:10px;
+ }
 
 /* ABOUT PAGE */
 
