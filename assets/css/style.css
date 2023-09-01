@@ -164,9 +164,9 @@ p {
         text-align: center;
         text-decoration: none;
         color: #f5bd60;
-        font-size: 2em;
+        font-size: 1.5em;
         display: inline-block;
-        margin-top: 1.25em;
+        margin-top: 0.75em;
         transition: color 0.2s ease-in-out;
         letter-spacing: 1px;
     }
@@ -264,7 +264,7 @@ ion-icon {
 }
 
 .nav-socials ion-icon{
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 500px) {
