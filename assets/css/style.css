@@ -94,6 +94,17 @@ p {
     font-weight: bold;
 }
 
+.text-link{
+    font-family: 'Ubuntu', sans-serif;
+    color: #f5bd60;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-link:hover{
+    color: #5c80bc;
+}
+
 .mobile {
     display: none;
 }
@@ -169,6 +180,10 @@ p {
         margin-top: 0.75em;
         transition: color 0.2s ease-in-out;
         letter-spacing: 1px;
+    }
+
+    nav a:hover{
+        color: #5c80bc;
     }
       
      #toggle:checked + .hamburger .top-bun {
@@ -298,19 +313,7 @@ video-three-column-mobile {
 
 }
 */
-/* Parallax effect */
-.parallax{
-    padding-top: 200px;
-    padding-bottom: 200px;
-    overflow:hidden;
-    position: relative;
-    background-image: url('assets/images/parallax.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-}
+/* Parallax */
 
 #parallax {
     width: 100%;
@@ -328,54 +331,34 @@ video-three-column-mobile {
 
 
 /* CLIENT PAGE */
-.client-row {
-    display: flex;
+.client-grid {
+    display: grid;
+    margin-top: 1rem;
+    gap: 10px;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
 }
   
 
-.client-row img {
-    width: 22%;
-    object-fit: cover;
-    margin-right: 50px;
+.client-logo img {
+    max-width: 80%;
 }
-  
-.client-row .client-text {
-    flex: 1;
+
+.client-text {
     text-align: left;
     color: #f5bd60;
 }
 
-.client-row .client-text a{
-    font-family: 'Ubuntu', sans-serif;
-    color: #f5bd60;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.client-row .client-text a:hover{
-    color: #5c80bc;
-}
-
-@media only screen and (max-width: 720px) {
-    .clients {
-        margin-top: 25px;
+@media only screen and (max-width: 750px) {
+    .client-grid {
+        grid-template-columns: 1fr;
     }
-    .client-row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .client-row img {
-        width: 40%;
-        margin-right: 0px;
-    }
-
-    .client-row .client-text {
-        flex: 1;
+    .client-text {
         text-align: center;
-        color: #f5bd60;
+    }
+
+    .client-logo #royals {
+        margin: 3.5rem 0rem;
     }
 }
 
@@ -407,10 +390,13 @@ video-three-column-mobile {
 }
 
 /* PHOTOGRAPHY PAGE */ 
+#carousel {
+    height: 400px;
+}
+
 .carousel-item img{
-    width: auto !important;
-    height: 500px;
-    margin: 0 auto;
+    height: 400px;
+    object-fit: contain;
 }
 
 /* WORK PAGE */
