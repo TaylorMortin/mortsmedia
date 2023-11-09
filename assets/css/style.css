@@ -301,18 +301,7 @@ ion-icon {
 video-three-column-mobile {
     display: none;
 }
-/*
-@media only screen and (max-width: 720px) {
-    .video-three-column {
-        display: none;
-    }
 
-    video-three-column-mobile {
-        width: 100%;
-    }
-
-}
-*/
 /* Parallax */
 
 #parallax {
@@ -331,16 +320,7 @@ video-three-column-mobile {
 
 
 /* CLIENT PAGE */
-.client-grid {
-    display: grid;
-    margin-top: 1rem;
-    gap: 10px;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-}
-  
-
-.client-logo img {
+.work-row img {
     max-width: 80%;
 }
 
