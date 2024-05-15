@@ -236,6 +236,14 @@ p {
     }
 }
 
+
+@media only screen and (max-width: 375px) {
+
+    .logo img {
+        max-height: 38px;
+    }
+}
+
 .container {
     max-width: 80vw;
     margin: 0 auto;
@@ -265,12 +273,12 @@ ion-icon {
     display: flex;
     flex-flow: column;
     position: fixed;
-    top: 10rem;
-    right: 2.5rem;
-    gap: 1rem;
+    top: 30%;
+    right: 1.5rem;
+    gap: 0.5rem;
 }
 .sidebar-socials ion-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .nav-socials {
@@ -378,16 +386,39 @@ video-three-column-mobile {
     height: 400px;
     object-fit: contain;
 }
-
 /* WORK PAGE */
-.work-row {
+.work-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-grid {
     display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-column-gap: 6px;
-    grid-row-gap:10px;
- }
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.horizontal {
+    grid-column: span 3;
+}
+
+@media only screen and (max-width: 824px) {
+    .work-grid {
+        display: block;
+    }
+    .horizontal {
+        margin-bottom: 15px;
+    }
+    .vertical {
+        margin-bottom: 15px;
+    }
+    
+}
+
 
 /* ABOUT PAGE */
 
